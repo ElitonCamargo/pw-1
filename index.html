@@ -2,98 +2,143 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/estilo.css">
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Base bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Olá, mundo!</title>
+    <style>
+        .teste1 {
+            background-color: blue;
+        }
+
+        .teste2 {
+            background-color: green;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
 
-      <div class="col-12	col-sm-6	col-md-4	col-lg-3	col-xl-2 px-1">
-        <div class="card">
-          <img class="card-img-top" src="img/1.webp" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Vó da Chiquinha</h5>
-            <p class="card-text">
-              Texto de sua preferência
-            </p>
-          </div>
+    <div class="container-fluid p-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/1.webp" width="2000px" height="300px"
+                        alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/2.webp" width="2000px" height="300px"
+                        alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/3.webp" width="2000px" height="300px"
+                        alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
-      </div>
-
-      <div class="col-12	col-sm-6	col-md-4	col-lg-3	col-xl-2 px-1">
-        <div class="card">
-          <img class="card-img-top" src="img/2.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Texto padrão</h5>
-            <p class="card-text">
-              Texto padrão
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12	col-sm-6	col-md-4	col-lg-3	col-xl-2 px-1">
-        <div class="card">
-          <img class="card-img-top" src="img/3.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Texto padrão</h5>
-            <p class="card-text">
-              Texto padrão
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12	col-sm-6	col-md-4	col-lg-3	col-xl-2 px-1">
-        <div class="card">
-          <img class="card-img-top" src="img/4.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Texto padrão</h5>
-            <p class="card-text">
-              Texto padrão
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12	col-sm-6	col-md-4	col-lg-3	col-xl-2 px-1">
-        <div class="card">
-          <img class="card-img-top" src="img/5.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Texto padrão</h5>
-            <p class="card-text">
-              Texto padrão
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12	col-sm-6	col-md-4	col-lg-3	col-xl-2 px-1">
-        <div class="card">
-          <img class="card-img-top" src="img/6.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Texto padrão</h5>
-            <p class="card-text">
-              Texto padrão
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ação</a>
+                        <a class="dropdown-item" href="#">Outra ação</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Desativado</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <img 
+                    src="https://portal.fgv.br/sites/portal.fgv.br/files/styles/noticia_geral/public/noticias/08/21/futebol.jpg" 
+                    class="img-fluid"
+                >
+            </div>
+            <div class="col-12 col-md-7">
+                <h2>Copa do Mundo FIFA de 2022</h2>
+
+                <p>A Copa do Mundo FIFA de 2022 ou Campeonato Mundial de Futebol FIFA de 2022 será a vigésima segunda edição deste evento esportivo, um torneio internacional de futebol masculino organizado pela Federação Internacional de Futebol (FIFA), que ocorrerá no Catar. A edição de 2022 será a primeira realizada no Oriente Médio e a última a ter o formato de 32 equipes, já que a competição terá uma mudança no formato e número de equipes na edição de 2026, onde será sediado no Canadá, Estados Unidos e México, passando para 48 equipes.</p>
+                <p>Com sete cidades-sede, o campeonato será disputado entre 20 de novembro e 18 de dezembro, ao invés do período tradicional graça às altas temperaturas que o país sofre no meio do ano; esta é a primeira vez em que uma copa do mundo será disputada no final do ano. Acusações de corrupção foram feitas após o Catar ganhar o direito de sediar o campeonato. A FIFA realizou uma investigação interna sobre estas alegações e absolveu o Catar de qualquer crime cometido.[3] Em 27 de maio de 2015, promotores federais suíços abriram uma investigação sobre corrupção e lavagem de dinheiro nas eleições das cidades-sede das edições de 2018 e 2022.</p>
+                <p>Em 7 de junho de 2015, foi anunciado que o Catar poderia perder o direito de sediar o campeonato, após denúncias de suborno. De acordo com Domenico Scala, representante da auditoria da FIFA, as denúncias surgiram após a divulgação do resultado da votação de eleição da cidade-sede.[6] Porém, nenhum indício foi comprovado e o Catar foi confirmado como sede desta edição</p>
+                <p>O Catar sofreu diversas criticas sobre as condições dos trabalhadores dos novos estádios para a competição, sendo que a Anistia Internacional referiu-se como trabalho escravo as condições dos trabalhadores, que sofriam abusos de direitos humanos, violando diversas regras da instituição.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <img 
+                    src="https://portal.fgv.br/sites/portal.fgv.br/files/styles/noticia_geral/public/noticias/08/21/futebol.jpg" 
+                    class="img-fluid"
+                >
+            </div>
+            <div class="col-12 col-md-7">
+                <h2>Copa do Mundo FIFA de 2022</h2>
+
+                <p>A Copa do Mundo FIFA de 2022 ou Campeonato Mundial de Futebol FIFA de 2022 será a vigésima segunda edição deste evento esportivo, um torneio internacional de futebol masculino organizado pela Federação Internacional de Futebol (FIFA), que ocorrerá no Catar. A edição de 2022 será a primeira realizada no Oriente Médio e a última a ter o formato de 32 equipes, já que a competição terá uma mudança no formato e número de equipes na edição de 2026, onde será sediado no Canadá, Estados Unidos e México, passando para 48 equipes.</p>
+                <p>Com sete cidades-sede, o campeonato será disputado entre 20 de novembro e 18 de dezembro, ao invés do período tradicional graça às altas temperaturas que o país sofre no meio do ano; esta é a primeira vez em que uma copa do mundo será disputada no final do ano. Acusações de corrupção foram feitas após o Catar ganhar o direito de sediar o campeonato. A FIFA realizou uma investigação interna sobre estas alegações e absolveu o Catar de qualquer crime cometido.[3] Em 27 de maio de 2015, promotores federais suíços abriram uma investigação sobre corrupção e lavagem de dinheiro nas eleições das cidades-sede das edições de 2018 e 2022.</p>
+                <p>Em 7 de junho de 2015, foi anunciado que o Catar poderia perder o direito de sediar o campeonato, após denúncias de suborno. De acordo com Domenico Scala, representante da auditoria da FIFA, as denúncias surgiram após a divulgação do resultado da votação de eleição da cidade-sede.[6] Porém, nenhum indício foi comprovado e o Catar foi confirmado como sede desta edição</p>
+                <p>O Catar sofreu diversas criticas sobre as condições dos trabalhadores dos novos estádios para a competição, sendo que a Anistia Internacional referiu-se como trabalho escravo as condições dos trabalhadores, que sofriam abusos de direitos humanos, violando diversas regras da instituição.</p>
+
+            </div>
+        </div>
+    </div>
 
 
-
-  <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
-  <script src="bootstrap/js/popper.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js.map"></script>
 </body>
 
 </html>
